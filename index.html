@@ -3,10 +3,13 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Potter's House Church Maidstone</title>
     <style>
+      a {
+        color: #bb2130;
+      }
       h1 {
         color: #bb2130;
         font-family: 'Montserrat';
-        font-size: 7vw;
+        font-size: 6vw;
         font-weight: 800;
         margin-top: 50px;
       }
@@ -27,6 +30,7 @@
         width: 96%;
         height: 0;
         padding-bottom: 56.25%;
+        margin-bottom: 30px;
       }
       .video {
         position: absolute;
@@ -34,8 +38,17 @@
         left: 0;
         width: 100%;
         height: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 30px;        
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      }
+      .div1 {
+        grid-area: 1 / 1 / 3 / 3;
       }
     </style>
   </head>
@@ -61,6 +74,11 @@
       <p class="contact">
         <a href="mailto:hello@phcmaidstone.co.uk">hello@phcmaidstone.co.uk</a>
       </p>
+      <div class="parent">
+        <div class="div1">
+            TEST
+        </div>
+      </div>
     </Center>
   </body>
 </html>
