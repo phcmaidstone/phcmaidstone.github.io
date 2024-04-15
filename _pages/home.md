@@ -15,7 +15,7 @@ feature_row:
     image_path: /assets/images/welcome.jpg
     alt: "customizable"
     title: "All are welcome"
-    excerpt: "At Potter's House Church Maidstone our services are designed to inspire, uplift, and bring you closer to Jesus."
+    excerpt: "At Potter's House Church Maidstone our services will inspire, energise, and bring you closer to Jesus."
     url: "/welcome"
     btn_class: "btn--primary"
     btn_label: "Join us"
@@ -23,17 +23,17 @@ feature_row:
     image_path: /assets/images/bible-study.jpg
     alt: "fully responsive"
     title: "Bible Study"
-    excerpt: "Join us for a Friday night bible study class"
+    excerpt: "We'll be hosting informal collaborative bible study classes one weekday evening each week."
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - #image_path: /assets/images/mm-free-feature.png
-    image_path: /assets/images/splash2.jpg
-    alt: "100% free"
+    image_path: /assets/images/events.jpg
+    alt: "Community Events"
     title: "Upcoming Events"
-    excerpt: "Find out more about our upcoming events"
-    url: "/docs/license/"
+    excerpt: "Alongside our Sunday services, we'll be hosting local events to share the love of Christ with the local community in engaging ways."
+    url: "/events/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"        
+    btn_label: "Events Diary"        
 ---
 {% include feature_row %}
