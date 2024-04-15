@@ -9,4 +9,4 @@ toc: true
 
 Get in touch with us and we'll get back to you as soon as possible.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpVYJ1EeA8Gv9IMzygAWq_KOYhjLCoDjyEdZiEQbXzifT7rA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+You can reach us at [hello@phcmaidstone.co.uk](mailto:hello@phcmaidstone.co.uk)
