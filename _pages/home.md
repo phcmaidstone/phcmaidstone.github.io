@@ -24,7 +24,7 @@ feature_row:
     alt: "fully responsive"
     title: "Bible Study"
     excerpt: "We'll be hosting informal collaborative bible study classes one weekday evening each week."
-    url: "/docs/layouts/"
+    url: "/bible-study/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - #image_path: /assets/images/mm-free-feature.png
