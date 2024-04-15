@@ -28,8 +28,14 @@ email: hello@phcmaidstone.co.uk
 instagram_username: phcmaidstone
 logo: "/assets/images/phcm.jpg"
 title: Potter's House Church Maidstone
+masthead_title: " "
 #subtitle: Potter's House Church Maidstone
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+header:
+  overlay_image: /path/to/your/overlay/image.jpg
+  overlay_filter: 0.5 # Integer between 0 and 1
+
 
 # Build settings
 #theme: minima
