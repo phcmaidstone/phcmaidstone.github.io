@@ -20,16 +20,15 @@
 
 atom_feed:
   hide: true
-  
-domain: phcmaidstone.co.uk
-title: Potter's House Church Maidstone
-#subtitle: Potter's House Church Maidstone
-email: hello@phcmaidstone.co.uk
+baseurl: "" # the subpath of your site, e.g. /blog
 description: >- # this means to ignore newlines until "baseurl:"
   A new church, coming soon to Maidstone
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+domain: phcmaidstone.co.uk
+email: hello@phcmaidstone.co.uk
 instagram_username: phcmaidstone
+title: Potter's House Church Maidstone
+#subtitle: Potter's House Church Maidstone
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 #theme: minima
@@ -39,6 +38,22 @@ plugins:
   - jekyll-include-cache
 
 include: ["_pages"]
+
+recent_posts:
+  hide: true
+
+# Site Footer
+footer:
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: https://instagram.com/phcmaidstone
+    - label: "TikTok"
+      icon: "fab fa-fw fa-tiktok"
+      url: https://tiktok.com/@phcmaidstone
+    - label: "Snapchat"
+      icon: "fab fa-fw fa-snapchat"
+      url: https://snapchat.com/phcmaidstone
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -59,22 +74,3 @@ include: ["_pages"]
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-recent_posts:
-  enabled: false
-
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: https://twitter.com/phcmaidstone
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: https://instagram.com/phcmaidstone
-    - label: "TikTok"
-      icon: "fab fa-fw fa-tiktok"
-      url: https://tiktok.com/@phcmaidstone
-    - label: "Snapchat"
-      icon: "fab fa-fw fa-snapchat"
-      url: https://snapchat.com/phcmaidstone      
