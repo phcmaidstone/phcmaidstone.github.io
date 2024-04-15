@@ -4,32 +4,36 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/splash2.jpg
+  overlay_image: /assets/images/splash4.jpg
   actions:
     - label: "<i class='fas fa-envelope'></i> Find Out More"
       url: "mailto:hello@phcmaidstone.co.uk"
 excerpt: >
-  A new church coming to Maidstone in 2024
-# feature_row:
-#   - image_path: /assets/images/mm-customizable-feature.png
-#     alt: "customizable"
-#     title: "Bible Study"
-#     excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-#     url: "/docs/configuration/"
-#     btn_class: "btn--primary"
-#     btn_label: "Learn more"
-#   - image_path: /assets/images/mm-responsive-feature.png
-#     alt: "fully responsive"
-#     title: "Responsive layouts"
-#     excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-#     url: "/docs/layouts/"
-#     btn_class: "btn--primary"
-#     btn_label: "Learn more"
-#   - image_path: /assets/images/mm-free-feature.png
-#     alt: "100% free"
-#     title: "100% free"
-#     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-#     url: "/docs/license/"
-#     btn_class: "btn--primary"
-#     btn_label: "Learn more"      
+  A new church is coming to Maidstone
+feature_row:
+  - #image_path: /assets/images/mm-customizable-feature.png
+    image_path: /assets/images/welcome.jpg
+    alt: "customizable"
+    title: "All are welcome"
+    excerpt: "At Potter's House Church Maidstone our services are designed to inspire, uplift, and bring you closer to Jesus."
+    url: "/welcome"
+    btn_class: "btn--primary"
+    btn_label: "Join us"
+  - #image_path: /assets/images/mm-responsive-feature.png
+    image_path: /assets/images/bible-study.jpg
+    alt: "fully responsive"
+    title: "Bible Study"
+    excerpt: "Join us for a Friday night bible study class"
+    url: "/docs/layouts/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - #image_path: /assets/images/mm-free-feature.png
+    image_path: /assets/images/splash2.jpg
+    alt: "100% free"
+    title: "Upcoming Events"
+    excerpt: "Find out more about our upcoming events"
+    url: "/docs/license/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"        
 ---
+{% include feature_row %}
