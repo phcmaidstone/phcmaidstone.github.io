@@ -14,7 +14,7 @@ feature_row:
   - #image_path: /assets/images/mm-customizable-feature.png
     image_path: /assets/images/welcome.jpg
     alt: "customizable"
-    title: "All are welcome"
+    title: "All Welcome"
     excerpt: "At Potter's House Church Maidstone our services will inspire, energise, and bring you closer to Jesus."
     url: "/welcome"
     btn_class: "btn--primary"
