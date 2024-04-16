@@ -36,6 +36,8 @@ header:
   overlay_image: /path/to/your/overlay/image.jpg
   overlay_filter: 0.5 # Integer between 0 and 1
 
+include: ["_pages"]
+
 
 # Build settings
 #theme: minima
@@ -43,8 +45,6 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   #- jekyll-feed
   - jekyll-include-cache
-
-include: ["_pages"]
 
 recent_posts:
   hide: true
