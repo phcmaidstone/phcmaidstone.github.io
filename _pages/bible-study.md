@@ -1,9 +1,8 @@
 ---
 permalink: /bible-study/
-layout: "single"
+layout: single
 title: "Join our Bible Study Classes"
 excerpt: "Discover how you can join one of our bible study classes."
-last_modified_at: 2024-04-15T19:54:26-04:00
 toc: false
 ---
 

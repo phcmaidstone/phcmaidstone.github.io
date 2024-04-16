@@ -24,6 +24,8 @@ feature_row:
 
 ## About Potter's House Church Maidstone
 
+The Potter’s House Church Maidstone is a Bible-based, Spirit-filled, Non-denominational church passionate about spreading the Gospel of Jesus Christ. We are a dynamic and diverse community of people who want to live our lives in the way that Jesus did and that is by: Loving God, Loving People and Serving Others.
+
 Find out more about us, our beliefs and how we can help you grow closer to Christ.
 
 {% include feature_row %}

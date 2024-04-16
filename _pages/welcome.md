@@ -1,9 +1,8 @@
 ---
 permalink: /welcome/
-layout: "single"
+layout: single
 title: "Welcome"
 excerpt: "Welcome to our Church. Find out more about our services."
-last_modified_at: 2024-04-15T19:54:26-04:00
 toc: false
 ---
 

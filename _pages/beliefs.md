@@ -3,8 +3,7 @@ permalink: /about/beliefs/
 layout: single
 title: "Beliefs & Statements of Faith"
 excerpt: "Our Beliefs & Statements of Faith."
-last_modified_at: 2024-04-15T19:54:26-04:00
-toc: true
+toc: false
 ---
 
 ## Our Beliefs

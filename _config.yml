@@ -32,6 +32,30 @@ masthead_title: "                    "
 #subtitle: Potter's House Church Maidstone
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+author:
+  name             : "Your Name"
+
+minimal_mistakes:
+  last_modified_at: false
+
+
+last_modified_at: false
+
+defaults:
+  # _posts
+  - last_modified_at: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+
 header:
   overlay_image: /path/to/your/overlay/image.jpg
   overlay_filter: 0.5 # Integer between 0 and 1
