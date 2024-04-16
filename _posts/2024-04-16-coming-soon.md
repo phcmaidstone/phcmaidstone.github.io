@@ -1,5 +1,4 @@
 ---
-author: "Potter's House Church Maidstone"
 title:  "Coming soon!"
 header:
   teaser: "/assets/images/500x300.png"
