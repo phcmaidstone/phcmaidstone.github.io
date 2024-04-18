@@ -38,10 +38,14 @@ author:
 minimal_mistakes:
   last_modified_at: false
 
-
 last_modified_at: false
 
-google_analytics: "G-DR9EHHPFFJ"
+# google_analytics: "G-DR9EHHPFFJ"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-DR9EHHPFFJ"
 
 defaults:
   # _posts
