@@ -1,5 +1,8 @@
 ---
 permalink: /connect/comingsoon/
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/splash2.jpg
 layout: single
 title: "New Church, New Beginnings"
 excerpt: "Thank you for responding to our flyer!"
@@ -11,7 +14,6 @@ Thank you for responding to our flyer!  We're excited to confirm Potters House C
 At this time, we do not have a precise date for starting our church services, but we encourage you to bookmark this page, follow us on [Instagram](https://instagram.com/phcmaidstone) or [YouTube](https://youtube.com/@phcmaidstone) where we'll be keeping you up to date on progress.  You can also follow our [Blog](/blog/)
 
 > *I have come that they may have life, and that they may have it more abundantly*
->
 > **John 10:10**
 
 We passionately believe in the Gospel of Jesus Christ and the power of the Holy Spirit to change lives. Jesus loves you, and wants you to live an abundant life style. He has changed our lives, and He can do the same for you!
