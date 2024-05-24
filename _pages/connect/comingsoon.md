@@ -10,10 +10,11 @@ Thank you for responding to our flyer!
 
 Potters House Church Maidstone will be opening during 2024!  We do not have a precise date for our church services at this time, but we encourage you do bookmark this page, follow us on [Instagram](https://instagram.com/@phcmaidstone) or [YouTube](https://youtube.com/@phcmaidstone) where we'll be keeping you up to date on progress.
 
-We will soon be starting in-person [Bible Study Classes](/bible-study/), hosting weekly online [Prayer Meetings](/events/) and attending [Community](/events/).  If you'd like to join us, or ask us to attend your event, please [get in touch](mailto:hello@phcmaidstone.co.uk).
+We will soon be starting in-person [Bible Study Classes](/bible-study/), hosting weekly online [Prayer Meetings](/events/) and attending [Community](/events/).  If you'd like to be kept up to date on our progress, join a bible study or prayer meeting, ask us to attend your event - or anything at all - please [get in touch](mailto:hello@phcmaidstone.co.uk).
 
 <form action="https://formsubmit.co/hello@phcmaidstone.co.uk" method="POST">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <button type="submit">Send</button>
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email Address" required>
+  <textarea placeholder="Your Message" name="message" rows="7"></textarea>
+  <button type="submit" class="btn btn--primary">Contact Us</button>
 </form>
