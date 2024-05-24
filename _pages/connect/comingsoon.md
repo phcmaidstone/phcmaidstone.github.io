@@ -8,7 +8,7 @@ title: "New Church, New Beginnings"
 toc: false
 ---
 
-## Thank you for responding to our flyer!
+### Thank you for responding to our flyer!
 
 We're excited to confirm Potters House Church Maidstone will be opening during 2024!
 
