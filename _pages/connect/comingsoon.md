@@ -6,18 +6,19 @@ excerpt: "Thank you for responding to our flyer!"
 toc: false
 ---
 
-Thank you for responding to our flyer!
+Thank you for responding to our flyer!  We're excited to confirm Potters House Church Maidstone will be opening during 2024!
 
-Potters House Church Maidstone will be opening during 2024!  We do not have a precise date for our church services at this time, but we encourage you to bookmark this page, follow us on [Instagram](https://instagram.com/@phcmaidstone) or [YouTube](https://youtube.com/@phcmaidstone) where we'll be keeping you up to date on progress.
+At this time, we do not have a precise date for starting our church services, but we encourage you to bookmark this page, follow us on [Instagram](https://instagram.com/phcmaidstone) or [YouTube](https://youtube.com/@phcmaidstone) where we'll be keeping you up to date on progress.  You can also follow our [Blog](/blog/)
 
 > *I have come that they may have life, and that they may have it more abundantly*
+>
 > **John 10:10**
 
-We passionately believe in the Gosple of Jesus Christ and the power of the Holy Spirit to change lives.  Jesus loves you, and wants you to live an abundant life style.
+We passionately believe in the Gospel of Jesus Christ and the power of the Holy Spirit to change lives. Jesus loves you, and wants you to live an abundant life style. He has changed our lives, and He can do the same for you!
 
 Through our in-person [Bible Study Classes](/bible-study/), weekly online [Prayer Meetings](/events/) and attending [Community Events](/events/), we aim to share the gospel and show how the teachings of Jesus Christ can bring a life full of hope, love and peace.
 
-If you'd like to be kept up to date on our progress, join a bible study or prayer meeting, ask us to attend your event - or anything at all - please complete the form below or [drop us an email](mailto:hello@phcmaidstone.co.uk).
+If you'd like to be kept up to date on our progress as we approach our exciting launch, join a bible study class or prayer meeting, ask us to attend your local event - or just to say Hi! - please complete the form below or [drop us an email](mailto:hello@phcmaidstone.co.uk).
 
 <form action="https://formsubmit.co/d0b913960039794263b90db897969cf3" method="POST">
   <input type="text" name="name" placeholder="Your Name" required />
