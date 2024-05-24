@@ -2,7 +2,7 @@
 permalink: /connect/comingsoon/
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/connect-comingsoon.jpg
+  overlay_image: /assets/images/splash3.jpg
 layout: single
 title: "New Church, New Beginnings"
 toc: false
