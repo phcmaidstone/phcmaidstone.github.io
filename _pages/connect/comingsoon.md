@@ -2,14 +2,15 @@
 permalink: /connect/comingsoon/
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/splash2.jpg
+  overlay_image: /assets/images/connect-comingsoon.jpg
 layout: single
 title: "New Church, New Beginnings"
-excerpt: "Thank you for responding to our flyer!"
 toc: false
 ---
 
-Thank you for responding to our flyer!  We're excited to confirm Potters House Church Maidstone will be opening during 2024!
+##Thank you for responding to our flyer!##
+
+We're excited to confirm Potters House Church Maidstone will be opening during 2024!
 
 At this time, we do not have a precise date for starting our church services, but we encourage you to bookmark this page, follow us on [Instagram](https://instagram.com/phcmaidstone) or [YouTube](https://youtube.com/@phcmaidstone) where we'll be keeping you up to date on progress.  You can also follow our [Blog](/blog/)
 
