@@ -12,7 +12,7 @@ toc: false
 
 We're excited to confirm Potters House Church Maidstone will be opening during 2024!
 
-At this time, we do not have a precise date for starting our church services, but we encourage you to bookmark this page, follow us on [Instagram](https://instagram.com/phcmaidstone) or [YouTube](https://youtube.com/@phcmaidstone) where we'll be keeping you up to date on progress.  You can also follow our [Blog](/blog/)
+At this time, we do not have a precise date for starting our church services, but we encourage you to bookmark this page, follow us on [Instagram](https://instagram.com/phcmaidstone) or [YouTube](https://youtube.com/@phcmaidstone) where we'll be keeping you up to date on progress.  You can also follow our [Blog](/blog/) or [Subscribe to our What's App Announcements Channel](https://whatsapp.com/channel/0029Vaa9HTY8kyyPjHahC41d).
 
 > *I have come that they may have life, and that they may have it more abundantly*
 > **John 10:10**
