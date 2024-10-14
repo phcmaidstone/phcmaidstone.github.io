@@ -9,7 +9,7 @@ header:
     - label: "<i class='fas fa-envelope'></i> Find Out More"
       url: "mailto:hello@phcmaidstone.co.uk"
 excerpt: >
-  A new church is coming to Maidstone!
+  A new church is coming to Maidstone
 feature_row:
   - #image_path: /assets/images/mm-customizable-feature.png
     image_path: /assets/images/welcome.jpg
