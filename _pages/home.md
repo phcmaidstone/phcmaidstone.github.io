@@ -1,39 +1,38 @@
 ---
+title: "Potter's House Church Maidstone"
 layout: splash
 permalink: /
+date: 2024-10-16T18:30:00-04.00
 hidden: true
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/splash4.jpg
+  overlay_image: /assets/images/headers/home.jpg
+  overlay_filter: "0.25"
+  overlay_color: "#333"
   actions:
-    - label: "<i class='fas fa-envelope'></i> Find Out More"
-      url: "mailto:hello@phcmaidstone.co.uk"
-excerpt: >
-  A new church is coming to Maidstone
+    - label: "<i class='fas fa-arrow-right'></i> Find Out More"
+      url: "/welcome/"
+excerpt: "Join us from Sunday 17th November"
 feature_row:
-  - #image_path: /assets/images/mm-customizable-feature.png
-    image_path: /assets/images/welcome.jpg
-    alt: "customizable"
-    title: "All Welcome"
-    excerpt: "At Potter's House Church Maidstone our services will inspire, energise, and bring you closer to Jesus."
-    url: "/welcome"
+  - image_path: /assets/images/features/welcome.jpg
+    alt: "Welcome to our Church"
+    title: "All Are Welcome"
+    excerpt: "Our Sunday Services will inspire, energise, and bring you closer to **Jesus**."
+    url: "/welcome/"
     btn_class: "btn--primary"
     btn_label: "Join us"
-  - #image_path: /assets/images/mm-responsive-feature.png
-    image_path: /assets/images/bible-study.jpg
-    alt: "fully responsive"
-    title: "Bible Study"
-    excerpt: "We'll be hosting informal collaborative bible study classes one weekday evening each week."
-    url: "/bible-study/"
+  - image_path: /assets/images/features/location.jpg
+    alt: "Location Map of Fant Community Hall"
+    title: "Our Services"
+    excerpt: "We meet at **Fant Community Hall**, Fant Lane, Maidstone ME16 8NN from **2.30 PM**"
+    url: "/location/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - #image_path: /assets/images/mm-free-feature.png
-    image_path: /assets/images/events.jpg
-    alt: "Community Events"
+    btn_label: "Find us"
+  - image_path: /assets/images/features/events.jpg
+    alt: "Our Community Events"
     title: "Upcoming Events"
-    excerpt: "Alongside our Sunday services, we'll be hosting local events to share the love of Christ with the local community in engaging ways."
+    excerpt: "Sharing the love of Christ with the **local community** in engaging ways."
     url: "/events/"
     btn_class: "btn--primary"
-    btn_label: "Events Diary"        
+    btn_label: "Our Events"        
 ---
 {% include feature_row %}

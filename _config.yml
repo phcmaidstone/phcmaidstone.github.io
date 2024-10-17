@@ -22,7 +22,7 @@ atom_feed:
   hide: true
 baseurl: "" # the subpath of your site, e.g. /blog
 description: >- # this means to ignore newlines until "baseurl:"
-  A new church, coming soon to Maidstone
+  Potter's House Church Maidstone
 domain: phcmaidstone.co.uk
 email: hello@phcmaidstone.co.uk
 instagram_username: phcmaidstone
@@ -38,7 +38,7 @@ author:
 minimal_mistakes:
   last_modified_at: false
 
-last_modified_at: false
+#last_modified_at: false
 
 # google_analytics: "G-DR9EHHPFFJ"
 
@@ -46,10 +46,9 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-DR9EHHPFFJ"
-
+   
 defaults:
   # _posts
-  - last_modified_at: false
   - scope:
       path: ""
       type: posts
@@ -61,17 +60,23 @@ defaults:
       share: false
       related: true
 
-
 header:
   overlay_image: /path/to/your/overlay/image.jpg
   overlay_filter: 0.5 # Integer between 0 and 1
 
 include: ["_pages"]
 
+collections:
+  sermons:
+    output: true
+    permalink: /sermons/:name/
+  events:
+    output: true
+    permalink: /events/:name/
 
 # Build settings
 #theme: minima
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 plugins:
   #- jekyll-feed
   - jekyll-include-cache

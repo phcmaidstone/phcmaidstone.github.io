@@ -2,10 +2,16 @@
 permalink: /contact/
 layout: single
 title: "Get in touch"
-excerpt: "Send us a message"
+header:
+  overlay_image: /assets/images/headers/contact.jpg
+  overlay_filter: "0.4"
+  overlay_color: "#333"
+excerpt: "We're here to help you in any way we can"
 toc: false
 ---
 
-Get in touch with us and we'll get back to you as soon as possible.
+<script type="text/javascript" src="https://form.jotform.com/jsform/242904334778363"></script>
 
-You can reach us at [hello@phcmaidstone.co.uk](mailto:hello@phcmaidstone.co.uk)
+## Email us
+
+Alternatively, you can reach us at [hello@phcmaidstone.co.uk](mailto:hello@phcmaidstone.co.uk)
