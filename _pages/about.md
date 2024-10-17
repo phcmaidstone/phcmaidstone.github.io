@@ -1,8 +1,7 @@
 ---
 permalink: /about/
 layout: splash
-title: "About"
-excerpt: "About Potter's House Church Maidstone"
+title: "About Us"
 last_modified_at: 2024-04-15T21:59:26-04:00
 header:
   overlay_image: /assets/images/headers/about.jpg

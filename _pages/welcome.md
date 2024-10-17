@@ -1,12 +1,11 @@
 ---
 permalink: /welcome/
 layout: single
-title: "Welcome"
+title: "Come as you are, leave renewed!"
 header:
   overlay_image: /assets/images/headers/welcome.jpg
   overlay_filter: "0.4"
   overlay_color: "#333"
-excerpt: "Come as you are, leave transformed!"
 toc: false
 ---
 

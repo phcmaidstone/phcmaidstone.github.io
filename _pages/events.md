@@ -1,7 +1,7 @@
 ---
 permalink: /events/
 layout: single
-title: "Upcoming Events"
+title: "Our Events"
 header:
   overlay_filter: "0.6"
   overlay_color: "#333"

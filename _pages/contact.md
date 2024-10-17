@@ -6,7 +6,6 @@ header:
   overlay_image: /assets/images/headers/contact.jpg
   overlay_filter: "0.4"
   overlay_color: "#333"
-excerpt: "We're here to help you in any way we can"
 toc: false
 ---
 
