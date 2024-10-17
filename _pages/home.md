@@ -23,7 +23,7 @@ feature_row:
   - image_path: /assets/images/features/location.jpg
     alt: "Location Map of Fant Community Hall"
     title: "Our Services"
-    excerpt: "We meet at **Fant Community Hall**, Fant Lane, Maidstone ME16 8NN from **2.30 PM**"
+    excerpt: "We'll meet at **Fant Community Hall**, Fant Lane, Maidstone ME16 8NN from **2.30 PM on 17th Nov.**"
     url: "/location/"
     btn_class: "btn--primary"
     btn_label: "Find us"
