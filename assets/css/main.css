@@ -2160,8 +2160,11 @@ input, select, textarea {
 	}
 
 	header h1 {
-		background-color: #bb2130;
-		margin-top: 1em;
+		/* background-color: #bb2130; /*
+		/* margin-top: 1em; */
+		font-size: 1.25em;
+		margin-top: -1em;
+		line-height: 1.75em;
 	}
 
 	header h2 + p {
