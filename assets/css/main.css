@@ -2167,10 +2167,6 @@ input, select, textarea {
 		line-height: 2.25em;
 	}
 
-	header h1#h1home {
-		font-size: 2.25em;
-		line-height: 1.75em;
-	}
 	header h1.h1home {
 		font-size: 2.5em;
 		font-weight: 800;
