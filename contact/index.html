@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" href="https://www.phcmaidstone.co.uk/favicon.ico" type="image/x-icon" />		
 		<meta name="description" content="Contact us here at Potter's House Church Maidstone. We're available for prayer requests, to answer your questions, or work with you to host a community event.">		
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 	</head>
@@ -73,16 +73,16 @@
 									<input type="hidden" name="_feedback.success.message" value="We'll get back to you as soon as possible.">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-12">
-											<input type="text" name="name" id="name" value="" placeholder="Your Name" />
+											<input type="text" name="name" id="name" value="" placeholder="Your Name" aria-label="Your Name" />
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="email" name="email" id="email" value="" placeholder="Your Email Address" />
+											<input type="email" name="email" id="email" value="" placeholder="Your Email Address" aria-label="Your Email Address" />
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="phone" id="phone" value="" placeholder="Your Phone Number" />
+											<input type="text" name="phone" id="phone" value="" placeholder="Your Phone Number" aria-label="Your Phone Number" />
 										</div>
 										<div class="col-12">
-											<select name="category" id="category">
+											<select name="category" id="category" aria-label="Category">
 												<option value="">- How can we help? -</option>
 												<option value="Prayer">I need prayer</option>
 												<option value="Question">I have a question about the church</option>
@@ -93,11 +93,11 @@
 											</select>
 										</div>
 										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6" aria-label="Your Message"></textarea>
 										</div>
 										<div class="col-12">
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
+												<li><input type="submit" value="Send Message" class="primary" aria-label="Send Your Message" /></li>
 											</ul>
 										</div>
 									</div>
