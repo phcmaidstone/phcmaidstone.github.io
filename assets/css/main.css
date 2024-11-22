@@ -4379,6 +4379,11 @@ input, select, textarea {
 		color: #ffffff;
 	}
 
+	.phcmmap {
+    		width:95%;
+    		max-width:1024px;
+	}	
+
 	.youtube-video {
 		aspect-ratio: 16 / 9;
 		width: 100%;
