@@ -17,15 +17,12 @@
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
 <style>
+
 .carousel {
   position: relative;
-
   width: 100%;
   max-width: 1024px;
-
   aspect-ratio: 1 / 1;
-  max-height: 1024px;
-
   margin: 2em auto;
   overflow: hidden;
   border-radius: 8px;
@@ -43,6 +40,35 @@
   object-fit: cover;
   flex-shrink: 0;
 }
+
+/* ✅ Arrows (fixed for mobile) */
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+
+  font-size: 24px;
+  padding: 0.6em 0.9em;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+/* ✅ Optional: hide arrows on very small screens */
+@media (max-width: 480px) {
+  .carousel button {
+    opacity: 0.8;
+  }
+}
+	
 </style>
 		
 	</head>
@@ -121,25 +147,82 @@
   <button class="next">›</button>
 </div>	
 	
+
+
 <script>
-const slides = document.querySelector('.slides');
-const images = document.querySelectorAll('.slides img');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
+const carousel = document.querySelector('.carousel');
+const slides = carousel.querySelector('.slides');
+const images = carousel.querySelectorAll('.slides img');
+const prev = carousel.querySelector('.prev');
+const next = carousel.querySelector('.next');
 
 let index = 0;
 
+// --- Slide function ---
 function showSlide(i) {
   index = (i + images.length) % images.length;
   slides.style.transform = `translateX(-${index * 100}%)`;
 }
 
+// --- Buttons ---
 next.addEventListener('click', () => showSlide(index + 1));
 prev.addEventListener('click', () => showSlide(index - 1));
 
-// Optional autoplay
-setInterval(() => showSlide(index + 1), 5000);
-</script>										
+// --- Autoplay (optional) ---
+let auto = setInterval(() => showSlide(index + 1), 5000);
+
+// Pause on hover (desktop)
+carousel.addEventListener('mouseenter', () => clearInterval(auto));
+carousel.addEventListener('mouseleave', () => {
+  auto = setInterval(() => showSlide(index + 1), 5000);
+});
+
+// --- Swipe support ---
+let startX = 0;
+let endX = 0;
+
+carousel.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+}, { passive: true });
+
+carousel.addEventListener('touchend', (e) => {
+  endX = e.changedTouches[0].clientX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const diff = startX - endX;
+
+  if (Math.abs(diff) > 50) { // threshold
+    if (diff > 0) {
+      showSlide(index + 1); // swipe left
+    } else {
+      showSlide(index - 1); // swipe right
+    }
+  }
+}
+
+// --- Mouse drag (bonus for desktop) ---
+let isDragging = false;
+
+carousel.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startX = e.clientX;
+});
+
+carousel.addEventListener('mouseup', (e) => {
+  if (!isDragging) return;
+  endX = e.clientX;
+  isDragging = false;
+  handleSwipe();
+});
+
+carousel.addEventListener('mouseleave', () => {
+  isDragging = false;
+});
+</script>
+
+	
 					
 					<a href="#details" class="goto-next scrolly">Next</a>
 				</section>
