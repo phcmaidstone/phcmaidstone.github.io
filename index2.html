@@ -151,8 +151,10 @@
 
 <script>
 const carousel = document.querySelector('.carousel');
+if (!carousel) return; // safety
+
 const slides = carousel.querySelector('.slides');
-const images = carousel.querySelectorAll('.slides img');
+const images = carousel.querySelectorAll('img');
 const prev = carousel.querySelector('.prev');
 const next = carousel.querySelector('.next');
 
@@ -165,61 +167,47 @@ function showSlide(i) {
 }
 
 // --- Buttons ---
-next.addEventListener('click', () => showSlide(index + 1));
-prev.addEventListener('click', () => showSlide(index - 1));
+next.addEventListener('click', (e) => {
+  e.stopPropagation();
+  showSlide(index + 1);
+});
 
-// --- Autoplay (optional) ---
+prev.addEventListener('click', (e) => {
+  e.stopPropagation();
+  showSlide(index - 1);
+});
+
+// --- Autoplay ---
 let auto = setInterval(() => showSlide(index + 1), 5000);
 
-// Pause on hover (desktop)
 carousel.addEventListener('mouseenter', () => clearInterval(auto));
 carousel.addEventListener('mouseleave', () => {
   auto = setInterval(() => showSlide(index + 1), 5000);
 });
 
-// --- Swipe support ---
+// --- Swipe (ONLY inside carousel) ---
 let startX = 0;
-let endX = 0;
+let isTouching = false;
 
 carousel.addEventListener('touchstart', (e) => {
+  isTouching = true;
   startX = e.touches[0].clientX;
 }, { passive: true });
 
 carousel.addEventListener('touchend', (e) => {
-  endX = e.changedTouches[0].clientX;
-  handleSwipe();
-});
+  if (!isTouching) return;
 
-function handleSwipe() {
+  const endX = e.changedTouches[0].clientX;
   const diff = startX - endX;
 
-  if (Math.abs(diff) > 50) { // threshold
-    if (diff > 0) {
-      showSlide(index + 1); // swipe left
-    } else {
-      showSlide(index - 1); // swipe right
-    }
+  if (Math.abs(diff) > 50) {
+    showSlide(diff > 0 ? index + 1 : index - 1);
   }
-}
 
-// --- Mouse drag (bonus for desktop) ---
-let isDragging = false;
-
-carousel.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startX = e.clientX;
+  isTouching = false;
 });
 
-carousel.addEventListener('mouseup', (e) => {
-  if (!isDragging) return;
-  endX = e.clientX;
-  isDragging = false;
-  handleSwipe();
-});
-
-carousel.addEventListener('mouseleave', () => {
-  isDragging = false;
-});
+// --- Remove mouse drag (THIS caused the "overlay" feel) ---
 </script>
 
 	
