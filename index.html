@@ -15,8 +15,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const carousel = document.querySelector('.carousel');
+  if (!carousel) return; // ✅ now valid
+
+  const slides = carousel.querySelector('.slides');
+  const images = carousel.querySelectorAll('img');
+  const prev = carousel.querySelector('.prev');
+  const next = carousel.querySelector('.next');
+
+  let index = 0;
+
+  // --- Slide function ---
+  function showSlide(i) {
+    index = (i + images.length) % images.length;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // --- Buttons ---
+  next.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showSlide(index + 1);
+  });
+
+  prev.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showSlide(index - 1);
+  });
+
+  // --- Autoplay ---
+  let auto = setInterval(() => showSlide(index + 1), 5000);
+
+  carousel.addEventListener('mouseenter', () => clearInterval(auto));
+  carousel.addEventListener('mouseleave', () => {
+    auto = setInterval(() => showSlide(index + 1), 5000);
+  });
+
+  // --- Swipe ---
+  let startX = 0;
+  let isTouching = false;
+
+  carousel.addEventListener('touchstart', (e) => {
+    isTouching = true;
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+
+  carousel.addEventListener('touchend', (e) => {
+    if (!isTouching) return;
+
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+
+    if (Math.abs(diff) > 50) {
+      showSlide(diff > 0 ? index + 1 : index - 1);
+    }
+
+    isTouching = false;
+  });
+
+});
+</script>
+		
 	</head>
-	<body class="is-preload landing">
+	<body class="landing">
 		<!-- Google Tag Manager (noscript) -->
 		<noscript>
 			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P7Q6MXW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -65,13 +128,44 @@
 							<p>We are Potter's House Church Maidstone<br />
 							Join us <a href="/events/diary" class="whitelink">this Sunday</a> at 2.30 PM</p>							
 							<p>
-							Listen to a <a href="/media/sermons/" class="whitelink">recent sermon</a>
+							Find out <a href="#whatson" class="whitelink">What's On in April</a> or listen to a <a href="/media/sermons/" class="whitelink">recent sermon</a>
 							</p>
 						</header>
 						<span class="image"><img src="/assets/images/banners/banner-logo.jpg" alt="" /></span>
 					</div>
 					<a href="#details" class="goto-next scrolly">Next</a>
 				</section>
+
+<!-- What's On -->
+				<section class="wrapper style1 special fade-up">
+					<div class="container">
+							<h2 id="whatson">What's on in April</h2>
+						<div class="box alt">
+			
+
+	<div class="carousel">
+	  <div class="slides">
+	    <img src="/assets/images/whatson/2026/04/Whats_On_2026_04-01.png" alt="">
+	    <img src="/assets/images/whatson/2026/04/Whats_On_2026_04-02.png" alt="">
+	    <img src="/assets/images/whatson/2026/04/Whats_On_2026_04-03.png" alt="">
+		<img src="/assets/images/whatson/2026/04/Whats_On_2026_04-04.png" alt="">
+		<img src="/assets/images/whatson/2026/04/Whats_On_2026_04-05.png" alt="">
+		<img src="/assets/images/whatson/2026/04/Whats_On_2026_04-06.png" alt="">
+		<img src="/assets/images/whatson/2026/04/Whats_On_2026_04-07.png" alt="">
+		<img src="/assets/images/whatson/2026/04/Whats_On_2026_04-08.png" alt="">
+		<img src="/assets/images/whatson/2026/04/Whats_On_2026_04-09.png" alt="">
+	  </div>
+
+	  <button class="prev">‹</button>
+  	  <button class="next">›</button>
+	</div>	
+						</div>
+					</div>
+	
+					
+					<a href="#details" class="goto-next scrolly">Next</a>
+				</section>
+
 
 
 				
@@ -248,6 +342,5 @@
 			<script src="/assets/js/breakpoints.min.js"></script>
 			<script src="/assets/js/util.js"></script>
 			<script src="/assets/js/main.js"></script>
-
 	</body>
 </html>
