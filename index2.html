@@ -16,60 +16,68 @@
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
-<style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
 
-.carousel {
-  position: relative;
-  width: 100%;
-  max-width: 1024px;
-  aspect-ratio: 1 / 1;
-  margin: 2em auto;
-  overflow: hidden;
-  border-radius: 8px;
-}
+  const carousel = document.querySelector('.carousel');
+  if (!carousel) return; // ✅ now valid
 
-.slides {
-  display: flex;
-  height: 100%;
-  transition: transform 0.4s ease;
-}
+  const slides = carousel.querySelector('.slides');
+  const images = carousel.querySelectorAll('img');
+  const prev = carousel.querySelector('.prev');
+  const next = carousel.querySelector('.next');
 
-.slides img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
+  let index = 0;
 
-/* ✅ Arrows (fixed for mobile) */
-.carousel button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-
-  font-size: 24px;
-  padding: 0.6em 0.9em;
-  border-radius: 50%;
-
-  cursor: pointer;
-}
-
-.prev { left: 5px; }
-.next { right: 5px; }
-
-/* ✅ Optional: hide arrows on very small screens */
-@media (max-width: 480px) {
-  .carousel button {
-    opacity: 0.8;
+  // --- Slide function ---
+  function showSlide(i) {
+    index = (i + images.length) % images.length;
+    slides.style.transform = `translateX(-${index * 100}%)`;
   }
-}
-	
-</style>
+
+  // --- Buttons ---
+  next.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showSlide(index + 1);
+  });
+
+  prev.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showSlide(index - 1);
+  });
+
+  // --- Autoplay ---
+  let auto = setInterval(() => showSlide(index + 1), 5000);
+
+  carousel.addEventListener('mouseenter', () => clearInterval(auto));
+  carousel.addEventListener('mouseleave', () => {
+    auto = setInterval(() => showSlide(index + 1), 5000);
+  });
+
+  // --- Swipe ---
+  let startX = 0;
+  let isTouching = false;
+
+  carousel.addEventListener('touchstart', (e) => {
+    isTouching = true;
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+
+  carousel.addEventListener('touchend', (e) => {
+    if (!isTouching) return;
+
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+
+    if (Math.abs(diff) > 50) {
+      showSlide(diff > 0 ? index + 1 : index - 1);
+    }
+
+    isTouching = false;
+  });
+
+});
+</script>
 		
 	</head>
 	<body class="is-preload landing">
