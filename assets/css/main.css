@@ -4395,6 +4395,11 @@ ul.actions-centred {
 		color: #ffffff;
 	}
 
+	.w3w {
+		color: #E11F26;
+		font-weight: 600;
+	}
+
 	.phcmmap {
     		width:95%;
     		max-width:1024px;
