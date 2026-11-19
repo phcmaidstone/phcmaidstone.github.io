@@ -4400,6 +4400,11 @@ ul.actions-centred {
 		font-weight: 600;
 	}
 
+	.w3wlocation {
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
 	.phcmmap {
     		width:95%;
     		max-width:1024px;
